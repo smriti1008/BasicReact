@@ -1,7 +1,7 @@
 import React, {useId} from 'react'
 
 
-function InputBox({
+function InputBox({       //OBJECT DESTRUCTURING
     label,
     amount,
     onAmountChange,
@@ -13,7 +13,7 @@ function InputBox({
     
     className = "",
 }) {
-    const amountInputId = useId()
+    const amountInputId = useId()   //suppose u have and input feild and label, connecting them improves accessibility
 
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex `}>
